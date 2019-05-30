@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e2e2e">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px">
+        <ImageView
+            android:src="@drawable/logotextonly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1" />
+        <TextView
+            android:text="Account registreren"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f0f0f0"
+            android:layout_marginBottom="25px"
+            android:layout_marginLeft="5px"
+            android:id="@+id/textView1" />
+        <EditText
+            android:hint="Gebruikersnaam"
+            android:width="220dp"
+            android:inputType="textPersonName"
+            android:backgroundTint="#eb8800"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText1" />
+        <EditText
+            android:hint="Wachtwoord"
+            android:width="220dp"
+            android:backgroundTint="#eb8800"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:inputType="textPassword"
+            android:password="true"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2" />
+        <EditText
+            android:hint="Herhaal wachtwoord"
+            android:width="220dp"
+            android:backgroundTint="#eb8800"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:inputType="textPassword"
+            android:password="true"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/repeatPass" />
+        <EditText
+            android:hint="Voor- en Achternaam"
+            android:width="120dp"
+            android:backgroundTint="#eb8800"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:maxLength="30" />
+        <EditText
+            android:hint="Unitnummer"
+            android:width="120dp"
+            android:backgroundTint="#eb8800"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:maxLength="3" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:foregroundTint="#f0f0f0"
+            android:popupBackground="#5b5b5c"
+            android:textColor="#f0f0f0"
+            android:layout_marginLeft="5px" />
+        <Button
+            android:text="Registreren"
+            android:textColor="#f0f0f0"
+            android:backgroundTint="#5b5b5c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1" />
+    </LinearLayout>
+</ScrollView>

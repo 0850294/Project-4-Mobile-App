@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#2e2e2e">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px">
+        <ImageView
+            android:src="@drawable/logotextonly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editOmschrijving"
+            android:maxLength="500"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:backgroundTint="#eb8800"
+            android:hint="Omschrijving probleem" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCounter"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="5px"
+            android:textColor="#f0f0f0"
+            android:text="0/500"
+            android:layout_marginBottom="10px" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/naam"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:backgroundTint="#eb8800"
+            android:hint="Voor- en Achternaam" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unitNummer"
+            android:textColorHint="#f0f0f0"
+            android:textColor="#f0f0f0"
+            android:backgroundTint="#eb8800"
+            android:hint="Unitnummer" />
+        <TextView
+            android:text="Urgentie"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="#f0f0f0"
+            android:layout_marginLeft="5px" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupUrgentie">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laag"
+                android:id="@+id/radioButtonLaag"
+                android:textColor="#f0f0f0"
+                android:backgroundTint="#5b5b5c"
+                android:buttonTint="#eb8800"
+                android:checked="true" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gemiddeld"
+                android:backgroundTint="#5b5b5c"
+                android:textColor="#f0f0f0"
+                android:buttonTint="#eb8800"
+                android:id="@+id/radioButtonGemiddeld" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Hoog"
+                android:backgroundTint="#5b5b5c"
+                android:textColor="#f0f0f0"
+                android:buttonTint="#eb8800"
+                android:id="@+id/radioButtonHoog" />
+        </RadioGroup>
+        <TextView
+            android:text="Toestemming om unit binnen te gaan?"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="#f0f0f0"
+            android:layout_marginLeft="5px" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupToestemming">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:backgroundTint="#5b5b5c"
+                android:text="Ja"
+                android:textColor="#f0f0f0"
+                android:buttonTint="#eb8800"
+                android:id="@+id/radioButtonJa" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nee"
+                android:backgroundTint="#5b5b5c"
+                android:textColor="#f0f0f0"
+                android:buttonTint="#eb8800"
+                android:id="@+id/radioButtonNee" />
+        </RadioGroup>
+        <Button
+            android:text="Verzenden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff878787"
+            android:backgroundTint="#5b5b5c"
+            android:id="@+id/buttonVerzenden"
+            android:enabled="false" />
+    </LinearLayout>
+</ScrollView>

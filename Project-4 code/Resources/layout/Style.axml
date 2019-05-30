@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style
+    name="MyAppTheme"
+    parent="Theme.AppCompat.Light">
+    <item
+        name="colorAccent" />
+    <item
+        name="colorControlActivated" />
+    <item
+        name="android:selectableItemBackgroundBorderless" />
+    <item
+        name="colorControlHighlight" />
+</style>

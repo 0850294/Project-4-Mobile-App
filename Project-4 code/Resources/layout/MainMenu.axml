@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e2e2e">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px">
+        <ImageView
+            android:src="@drawable/logotextonly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50px">
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/button1"
+                android:background="@drawable/ButtonRepair"
+                android:layout_marginBottom="15dp" />
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ButtonRoteb"
+                android:id="@+id/button2"
+                android:layout_marginBottom="15dp" />
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ButtonWassen"
+                android:id="@+id/button3"
+                android:layout_marginBottom="25dp" />
+        </LinearLayout>
+        <Button
+            android:textColor="#f0f0f0"
+            android:backgroundTint="#5b5b5c"
+            android:text="Logout"
+            android:layout_width="159.7dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_marginTop="7.7dp" />
+    </LinearLayout>
+</ScrollView>

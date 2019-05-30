@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e2e2e">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+                    <Button
+                        android:textColor="#f0f0f0"
+                        android:background="@drawable/BelRotebButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dialAppointment" />
+                    <TextView
+                        android:id="@+id/txtViewDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bel naar Roteb voor een afspraak"
+                        android:backgroundTint="#eb8800"
+                        android:textColorHint="#f0f0f0"
+                        android:textColor="#f0f0f0"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="4.7dp" />
+                </LinearLayout>
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="402.3dp"
+                    android:background="#2e2e2e"
+                    android:headerBackground="#eb8800"
+                    android:calendarTextColor="#f0f0f0"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:backgroundTint="#D7D7D7"
+                    android:datePickerMode="calendar" />
+                <TextView
+                    android:id="@+id/txtViewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Telefonisch een Afspraak gemaakt?"
+                    android:backgroundTint="#eb8800"
+                    android:textColorHint="#f0f0f0"
+                    android:textColor="#f0f0f0"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="4.7dp" />
+                <Button
+                    android:textColor="#f0f0f0"
+                    android:backgroundTint="#5b5b5c"
+                    android:id="@+id/knop2"
+                    android:text="Nieuwe afspraak in de kalender toevoegen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.0dp"
+                    android:layout_marginRight="0.0dp" />
+                <TextView
+                    android:id="@+id/txtViewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gemaakte afspraken Roteb:"
+                    android:backgroundTint="#eb8800"
+                    android:textColorHint="#f0f0f0"
+                    android:textColor="#f0f0f0"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="4.7dp" />
+                <ListView
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:id="@+id/listView1"
+                    android:backgroundTint="#eb8800"
+                    android:minHeight="150dp" />
+                <Button
+                    android:textColor="#f0f0f0"
+                    android:backgroundTint="#5b5b5c"
+                    android:text="Verwijder laatste afspraak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deleteAfspraak" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>
